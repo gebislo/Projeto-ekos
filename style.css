@@ -1,0 +1,178 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    background-color: rgb(173, 135, 66);
+    color: white;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+}
+
+h1{
+    margin-top: 2px;
+}
+h1 > a{
+    color: white;
+    font-size: 1.6em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+header > input#pesquisa{
+    height: 33px;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 16.5px;
+    border: none;
+    padding-left: 20px;
+}
+
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    height: 70px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ul > li > a{
+    color: white;
+    text-decoration: none;
+    padding: 26px;
+}
+
+ul > li > a:hover{
+    background-color: rgb(135, 106, 52);
+}
+
+.slider{
+    margin-top: 30px;
+    width: 1100px;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.456);
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 1100px;
+}
+
+.manual-navigation{
+    position: absolute;
+    left: 50%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+
+    translate: -50%;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 80px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -100%;
+}
+
+#radio6:checked ~ .first{
+    margin-left: -125%;
+}
+
+.navigation-auto div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.navigation-auto{
+    position: absolute;
+    left: 50%;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+
+    translate: -50%;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 80px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: white;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: white;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background-color: white;
+}
